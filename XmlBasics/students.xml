@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<students xmlns:students="urn:students"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="students.xsd">
+    <student>
+        <name>Jane</name>
+        <birthDate>1988-06-06</birthDate>
+        <gender>Female</gender>
+        <phone>35900886123456</phone>
+        <email>janeDoe@gmail.com</email>
+        <course>1</course>
+        <specialty>History</specialty>
+        <facultyNumber>001234</facultyNumber>
+        <endorsements>2</endorsements>
+        <exams>
+            <exam>
+                <name>Exam 1</name>
+                <tutor>Prof</tutor>
+                <score>6</score>
+            </exam>
+            <exam>
+                <name>Exam 3</name>
+                <tutor>Another prof</tutor>
+                <score>5.5</score>
+            </exam>
+        </exams>
+    </student>
+    <student>
+        <name>John</name>
+        <birthDate>1988-05-05</birthDate>
+        <gender>Male</gender>
+        <phone>35900886123457</phone>
+        <email>johnDoe@gmail.com</email>
+        <course>1</course>
+        <specialty>History</specialty>
+        <facultyNumber>001235</facultyNumber>
+        <endorsements>3</endorsements>
+        <exams>
+            <exam>
+                <name>Exam 5</name>
+                <tutor>Prof</tutor>
+                <score>4</score>
+            </exam>
+            <exam>
+                <name>Exam 2</name>
+                <tutor>Prof</tutor>
+                <score>5.5</score>
+            </exam>
+        </exams>
+    </student>
+</students>

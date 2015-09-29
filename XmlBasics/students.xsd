@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="students" type="studentsType"/>
+  <xs:complexType name="studentType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="birthDate">
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="gender">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Female"/>
+            <xs:enumeration value="Male"/>
+            <xs:enumeration value="Other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="phone">
+        <xs:simpleType>
+          <xs:restriction base="xs:long">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="email">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:byte" name="course"/>
+      <xs:element type="xs:string" name="specialty"/>
+      <xs:element name="facultyNumber">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="endorsements">
+        <xs:simpleType>
+          <xs:restriction base="xs:byte">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="examsType" name="exams"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="examsType">
+    <xs:sequence>
+      <xs:element type="examType" name="exam" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="examType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="tutor">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="score">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="studentsType">
+    <xs:sequence>
+      <xs:element type="studentType" name="student" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
