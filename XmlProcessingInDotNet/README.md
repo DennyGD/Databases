@@ -6,21 +6,21 @@
   * For each album you should define: `name`, `artist`, `year`, `producer`, `price` and a list of `songs`.
   * Each song should be described by title and duration.
 
-	**CatalogFirstCreation**
+	**[CatalogFirstCreation](CatalogFirstCreation)**
 
-	**Catalogs/catalog.xml**
+	**[AdditionalFiles/catalog.xml](AdditionalFiles/catalog.xml)**
 2.  Write program that extracts all different artists which are found in the `catalog.xml`.
   * For each author you should print the number of albums in the catalogue.
   * Use the DOM parser and a hash-table.
 
-	**ArtistsExtraction**
+	**[ArtistsExtraction](ArtistsExtraction)**
 3.  Implement the previous using XPath.
 
-	**ArtistsExtraction**
+	**[ArtistsExtraction](ArtistsExtraction)**
 
 4.  Using the DOM parser write a program to delete from `catalog.xml` all albums having price > 20.
 
-	**ExpensiveAlbumsRemoval**
+	**[ExpensiveAlbumsRemoval](ExpensiveAlbumsRemoval)**
 
 
 5.  Write a program, which using `XmlReader` extracts all song titles from `catalog.xml`.
